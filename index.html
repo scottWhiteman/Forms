@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Inputs</title>
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <form action="https://www.google.com">
+        <!--Input Text-->
+        <label for="first-name">Name:</label>
+        <input id="first-name" type="text" name="firstname" autofocus="on" maxlength="10" placeholder="Billy Bob" required/>
+        <br/>
+        <!--Email-->
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Bobbeh@themail.com" required />
+        <br/>
+        <!--Message-->
+        <label for="form-message">Your message:</label>
+        <textarea id="form-message" name="message"></textarea maxlength="250">
+        <br/>
+        <!--Radio Buttons-->
+        <h3>Which hand?</h3>
+        <input name="hand" type="radio" value="left">
+            <label for="left">Left</label>
+        <input name="hand" type="radio" value="right">
+            <label for="right">Right</label>
+        <input name="hand" type="radio" value="ambidextrous">
+            <label for="ambidextrous">Ambidextrous</label>
+        <br/>
+        <!--Checkboxes-->
+        <h3>Select Languages</h3>
+        <input name="html" type="checkbox" id="html">
+            <label for="html">HTML</label>
+            <br/>
+        <input name="css" type="checkbox" id="css">
+            <label for="css">CSS</label>
+            <br/>
+        <input name="js" type="checkbox" id="js">
+            <label for="js">JavaScript</label>
+            <br/>
+        <input name="binary" type="checkbox" id="binary">
+            <label for="binary">Binary</label>
+        <br/>
+        <!--Password input-->
+        <h3><label for="password">What is the Super Secret Password?</label></h3>
+        <input id="password" type="password" name="password" maxlength="10">
+        <br/>
+        <!--Select Box-->
+        <h3>Pick a number:</h3>
+        <select name="numbers">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+            <option value="six">6</option>
+            <option value="seven">7</option>
+            <option value="eight">8</option>
+            <option value="nine">9</option>
+        </select>
+        <br/>
+        <!--FieldSet/Legend-->
+        <fieldset>
+            <legend>Your Dream Location</legend>
+            <!--MoreText Input-->
+            <div>
+                <label for="addressLocation">Address</label>
+                <input id="addressLocation" type="text" name="address">
+            </div>
+            <div>
+                <label for="zipcode">ZipCode</label>
+                <input id="zipcode" type="text" name="zip">
+            </div>
+            <!--More Select Box-->
+            <div>
+                <label for="planets">Planet:</label>
+                <select id="planets" name="planets">
+                    <option value="The Sun">The Sun</option>
+                    <option value="Mercury">Mercury</option>
+                    <option value="Venus">Venus</option>
+                    <option value="Earth">Earth</option>
+                    <option value="Mars">Mars</option>
+                    <option value="Jupiter">Jupiter</option>
+                    <option value="Saturn">Saturn</option>
+                    <option value="Uranus">Uranus</option>
+                    <option value="Neptune">Neptune</option>
+                    <option value="Pluto">Pluto</option>
+                </select>
+            </div>
+        </fieldset>
+        <br/>
+        <!--Submit and Reset buttons-->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
